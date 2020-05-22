@@ -1,0 +1,137 @@
+Link{
+  text-decoration: none;
+}
+
+.page {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50vw;
+  background-color: #111111;
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 5px 5px 8px #000000;
+}
+
+.form-header {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.input {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: #000000;
+  border-radius: 7px;
+  border: 0;
+  padding: 12px;
+  padding-left: 15px;
+  width: 100%;
+  margin-top: 35px;
+  box-sizing: border-box;
+}
+
+.submit {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  background-color: #4ca54c;
+  color: #000000;
+  border-radius: 15px;
+  border: 0;
+  padding: 12px;
+  text-align: center;
+  margin-top: 35px;
+  width: 60%;
+}
+
+#login-form {
+  width: 30vw;
+}
+
+#login-header {
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
+}
+
+.input-login {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: #000000;
+  border-radius: 7px;
+  border: 0;
+  padding: 12px;
+  padding-left: 15px;
+  width: 100%;
+  margin-top: 50px;
+  box-sizing: border-box;
+}
+
+.submit-login {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  background-color: #4ca58a;
+  color: #000000;
+  border-radius: 15px;
+  border: 0;
+  padding: 12px;
+  text-align: center;
+  margin-top: 50px;
+  width: 50%;
+}
+
+.success {
+  font-weight: bold;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4ca54c;
+}
+
+.users-table {
+  background-color: #111111;
+  color: #ffffff;
+  width: 80vw;
+  border-radius: 3px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 0;
+}
+
+thead {
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px;
+  background-color: #222222;
+  box-sizing: border-box;
+  border: 0;
+}
+
+td {
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.logout-button{
+  background-color: #ff4a44;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  border: 0;
+  padding: 15px;
+}
