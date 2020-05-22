@@ -2,9 +2,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Routes
 
-"/" - Sign Up page <br />
-"/login" - Login page <br />
-"/success" - User Dashboard <br />
+### `"/"`
+
+Sign Up page <br />
+
+### `"/login"`
+
+Login page <br />
+
+### `"/success"` 
+
+User Dashboard <br />
 
 
 ## Available Scripts
