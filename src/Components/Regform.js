@@ -52,7 +52,7 @@ function Regform() {
     }
 
     return (
-        <div>
+        <div className="page">
         <form className="form" onSubmit={submitHandler}>
         <div className="form-header">SIGN UP</div>
         <input className="input" type="text" value={name} onChange={nameHandler} placeholder="Full name" required/>

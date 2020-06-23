@@ -15,14 +15,14 @@ db.once('open', ()=>{
     console.log("Server connection established")
 })
 
-let User = require('./Userdata.model');
+let User = require('./Models/Userdata.model');
 
 app.use(cors());
 app.use(bodyParser.json())
 
 
 UserRoutes.route("/").get((req,res) => {
-    User.find(function(err,user){
+    User.find(function(err, user){
         if(err){
             console.log("Database Unavailable");
         }

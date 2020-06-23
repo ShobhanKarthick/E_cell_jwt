@@ -7,6 +7,9 @@ function Login() {
   const [password, setPassword] = useState("");
   const [loggedIn, setLoggedIn] = useState(false);
   const [user, setUser] = useState([]);
+  const jwt = require('jsonwebtoken');
+
+  let token;
   let emailMatch = "null";
   let passwordMatch = false;
 
@@ -15,7 +18,6 @@ function Login() {
       .get("http://localhost:4000/userdata/")
       .then((response) => {
         setUser(response.data);
-        console.log(response.data);
       })
       .catch((error) => {
         console.log(error);
@@ -34,6 +36,7 @@ function Login() {
     setPassword("");
     const allUsers = user.map(function (current, i) {
       const container = {
+        id: current._id,
         email: current.email,
         password: current.password,
       };
@@ -46,8 +49,10 @@ function Login() {
         if( password === allUsers[x].password) {
           passwordMatch = true;  
           setLoggedIn(true);
-          localStorage.setItem("token", "shiwudhaisOHVFIHDOQSOUABIbxjsknXJBDUViuhqOHQhdvwuygdubjsviBAvdsdAwvibxjsc")
+          token = jwt.sign({id: allUsers[x].id, email: allUsers[x].email,}, "secret")
+          localStorage.setItem("TOKEN", token);
           console.log(loggedIn);
+          console.log(allUsers[x])
           break;
       }
         else{
@@ -69,7 +74,7 @@ function Login() {
     }
   };
   return (
-    <div>
+    <div className="page">
       <form className="form" id="login-form" onSubmit={submitHandler}>
         <div className="form-header" id="login-header">
           LOGIN

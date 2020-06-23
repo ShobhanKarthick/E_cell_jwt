@@ -9,7 +9,7 @@ import Userdata from './Components/Userdata';
 function App() {
   return (
     <Router>
-    <div className="page">
+    <div>
     <Route exact path="/" component={Regform} />
     <Route path="/login" component={Login} />
     <Route path="/success" component={Success} />
